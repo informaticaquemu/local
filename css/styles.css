@@ -1,0 +1,75 @@
+* {
+  scroll-behavior: smooth;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 100vh;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+main {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 auto;
+          flex: 1 0 auto;
+}
+
+.banner {
+  height: calc(100vh - 64px);
+  background: url("../images/background.jpg");
+  background-position: center;
+  background-size: auto;
+  background-repeat: no-repeat;
+}
+
+.banner h1 {
+  text-shadow: -1px 1px 10px #1a237e;
+}
+
+.parallax-container {
+  height: 600px;
+}
+
+.sticky img {
+  width: 50px;
+  height: 50px;
+  margin: .5em;
+}
+
+@media screen and (max-width: 1000px) {
+  .sticky .brand-logo {
+    font-size: 25px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .sticky img {
+    margin: .2em;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .sticky img {
+    display: none;
+  }
+  .sticky .brand-logo {
+    font-size: 15px;
+    font-weight: bolder;
+  }
+}
+
+.container .row .col .mayus {
+  text-transform: uppercase;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 800;
+}
+
+.container .row .col .material-icons {
+  cursor: pointer;
+}
+/*# sourceMappingURL=styles.css.map */
